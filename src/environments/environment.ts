@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: 'AIzaSyAIz8lBI_8zHzH0v3Oez06DbiYiYkylLZI',
+    authDomain: 'findhome-d7197.firebaseapp.com',
+    databaseURL: 'https://findhome-d7197.firebaseio.com',
+    projectId: 'findhome-d7197',
+    storageBucket: 'findhome-d7197.appspot.com',
+    messagingSenderId: '562670166577',
+    appId: '1:562670166577:web:8e063f2676bc631b32ab10'
+  }
 };
 
 /*
