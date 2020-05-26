@@ -1,0 +1,23 @@
+<div *ngFor="let hotel of hotels" class="princi">
+  <div  class="cardW">
+    <div class="card center ">
+      <div class="card-title">
+        {{hotel.hotel_name}}
+        <button class="btn btn-flat red-text btnF" (click)="deleteHotel(hotel.id)">
+          <i class="fas fa-trash"></i>
+        </button>
+        <button class="btn btn-flat blue-text btnF">
+          <i class="far fa-edit"></i>
+        </button>
+      </div>
+      <div class="card-image">
+        <img [src]="hotel.image" class="img"/>
+      </div>
+      <div class="card-content">
+        {{hotel.description}}
+      </div>
+
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="card-content">
+    <span class="card-title">
+      Añadir sitio
+    </span>
+
+    <form (ngSubmit)="onSubmit()">
+      <div class="col">
+        <div class="input-field">
+          <input type="text" placeholder="Nombre del sitio" name="site_name" [(ngModel)]="topsite.site_name">
+        </div>
+        <div class="input-field ">
+          <input type="text" placeholder="Descripción" name="description" [(ngModel)]="topsite.description" >
+        </div>
+        <div class="input-field ">
+          <input type="text" placeholder="Imagen del sitio" name="image" [(ngModel)]="topsite.image">
+        </div>
+      </div>
+      <input type="submit" class="btn btn-light">
+    </form>
+  </div>
+</div>

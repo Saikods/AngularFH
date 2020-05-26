@@ -1,0 +1,22 @@
+<div *ngFor="let topsites of topsites" class="princi">
+  <div  class="cardW">
+    <div class="card center ">
+      <div class="card-title">
+        {{topsites.site_name}}
+        <button class="btn btn-flat red-text btnF">
+          <i class="fas fa-trash"></i>
+        </button>
+        <button class="btn btn-flat blue-text btnF">
+          <i class="far fa-edit"></i>
+        </button>
+      </div>
+      <div class="card-image">
+        <img [src]="topsites.image" class="img"/>
+      </div>
+      <div class="card-content">
+        {{topsites.description}}
+      </div>
+
+    </div>
+  </div>
+</div>

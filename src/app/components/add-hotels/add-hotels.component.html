@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="card-content">
+    <span class="card-title">
+      Añadir hotel
+    </span>
+
+    <form (ngSubmit)="onSubmit()">
+      <div class="col">
+        <div class="input-field">
+          <input type="text" placeholder="Nombre del hotel" name="hotel_name" [(ngModel)]="hotel.hotel_name">
+        </div>
+        <div class="input-field ">
+          <input type="text" placeholder="Descripción" name="description" [(ngModel)]="hotel.description" >
+        </div>
+        <div class="input-field ">
+          <input type="text" placeholder="Imagen del hotel" name="image" [(ngModel)]="hotel.image">
+        </div>
+      </div>
+      <input type="submit" class="btn btn-light">
+    </form>
+  </div>
+</div>
